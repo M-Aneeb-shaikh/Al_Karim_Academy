@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --dark-pink: #f23079;
+  --orange: #f23d30;
+  --purple: #8430f2;
+  --green: #30f267;
+  --cyan: #30dcf2;
+  --yellow: #f2c830;
+  --magenta: #f230bb;
+  --blue: #3037f2;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav a {
+  color: #000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700 !important;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+nav .active {
+  color: #ff005f !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#hero {
+  height: 550px;
+  background-color: #ffffff;
+  /* opacity: 0.3; */
+  background: radial-gradient(
+      circle,
+      transparent 20%,
+      #ffffff 20%,
+      #ffffff 80%,
+      transparent 80%,
+      transparent
+    ),
+    radial-gradient(
+        circle,
+        transparent 20%,
+        #ffffff 20%,
+        #ffffff 80%,
+        transparent 80%,
+        transparent
+      )
+      25px 25px,
+    linear-gradient(rgba(186, 186, 186, 0.3) 2px, transparent 2px) 0 -1px,
+    linear-gradient(90deg, rgba(186, 186, 186, 0.3) 2px, #ffffff 2px) -1px 0;
+  background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  text-shadow: 3px 3px 0px #ff005f;
+}
+
+.highlight {
+  color: #212529;
+  font-weight: 700;
+}
+.custom-btn {
+  color: #fff;
+  background-color: #ff005ddc;
+}
+.custom-btn:hover {
+  background-color: #ff005f;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+#all-courses a,
+.course-card,
+.course-card:hover {
+  text-decoration: none;
+  color: unset;
+}
+#login-page,
+#signup-page {
+  height: 550px;
+}
+form {
+  max-width: 18rem;
+}
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+}
+
+footer h3 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3.04px;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: #bababa;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.card {
+  width: 18rem;
+}
+.card-img {
+  height: 220px;
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent image repetition */
+  background-size: 25%;
+}
+
+.card-text {
+  max-height: 3.6em; /* Adjust this value based on your font size and line height */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add this property to display the ellipsis */
+  white-space: normal; /* Use "normal" to allow text to wrap within the specified height */
+  line-height: 1.2em; /* Adjust this value to match your line height */
+  font-size: 0.85rem;
+}
+
+#course-detail-header {
+  background-size: 180%;
+  background-repeat: repeat-y;
+  background-position: right;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 10px black;
+}
+
+.custom-section {
+  min-height: 550px;
+}
+
+.custom-boxes {
+  height: 250px;
+}
+
+/* Add this CSS rule in your stylesheet or in a <style> tag in your HTML */
+@media (max-width: 480px) {
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .card-img {
+    height: 250px;
+  }
+  .custom-section {
+    min-height: 320px;
+  }
+  #course-detail-header {
+    background-size: 200%;
+  }
+}
